@@ -8,10 +8,8 @@ Bienvenue sur mon portfolio ! Ce document explique la structure du projet, comme
 2. [Structure du Projet](#structure-du-projet)
 3. [Technologies Utilisées](#technologies-utilisées)
 4. [Fonctionnalités](#fonctionnalités)
-5. [Installation](#installation)
-6. [Utilisation](#utilisation)
-7. [Projets Inclûs](#projets-inclus)
-8. [Contact](#contact)
+5. [Utilisation](#utilisation)
+6. [Contact](#contact)
 
 ## Aperçu
 
@@ -23,24 +21,19 @@ Le projet est organisé comme suit :
 
 ```
 Portfolio/
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   └── assets/
-├── .gitignore
-├── package.json
+├── img/
+├── js/
+│   └── app.js/
+├── styles/
+│   └── styles.css/
+├── index.html
 ├── README.md
-└── webpack.config.js
 ```
 
 ## Technologies Utilisées
 
-- **Frontend** : React, HTML, CSS, JavaScript
-- **Backend** : Node.js, Express
-- **Base de données** : MongoDB
-- **Outils et Librairies** : Webpack, Babel, Axios
+- **Frontend** : HTML, CSS, JavaScript
+- **Backend** : JS
 
 ## Fonctionnalités
 
@@ -49,11 +42,9 @@ Portfolio/
 - **Contact** : Formulaire de contact pour me joindre directement.
 - **CV** : Téléchargement de mon CV.
 
-## Installation
-
 1. Clonez le répertoire :
    ```bash
-   git clone https://github.com/votre-utilisateur/portfolio.git
+   git clone https://github.com/wadecheikh2994/portfolio.git
    ```
 2. Accédez au répertoire du projet :
    ```bash
@@ -76,19 +67,13 @@ Pour générer une version de production :
 npm run build
 ```
 
-## Projets Inclûs
-
-1. **Projet 1** : Description, technologies utilisées, lien vers le dépôt ou la démo.
-2. **Projet 2** : Description, technologies utilisées, lien vers le dépôt ou la démo.
-3. **Projet 3** : Description, technologies utilisées, lien vers le dépôt ou la démo.
-
 ## Contact
 
 Pour me contacter, veuillez utiliser le formulaire sur la page de contact ou envoyer un email à :
 
-- **Email** : votre-email@example.com
-- **LinkedIn** : [Votre Profil LinkedIn](https://linkedin.com/in/votre-profil)
-- **GitHub** : [Votre GitHub](https://github.com/votre-utilisateur)
+- **Email** : wadeelimane01@gmail.com
+- **LinkedIn** :(https://linkedin.com/in/elimanecheikhwade)
+- **GitHub** : (https://github.wadecheikh2994)
 
 Merci d'avoir visité mon portfolio !
 
