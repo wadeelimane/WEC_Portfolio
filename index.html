@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+     <!-- CDN RemixIcon -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+     rel="stylesheet"/>
+</head>
+<body>
+
+    <header style="position: fixed;
+                    z-index: 999;
+                    background-color: #fff;
+                    top: 0;
+                    width:100%;
+                    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.07);
+                    ">
+        <div class="boxed" id="accueil">
+            <div class="flex align-center space-between">
+                <a href="#" class="header-logo">
+                    <img src="img/wec.jpg" alt="">
+                </a>
+                <ul class="header-menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">A propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#realisation">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+                <div class="cv">
+                    <a href="img/WEC.pdf" download="CV Développeur FullStack - WEC" class>
+                        CV <i class="ri-download-2-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider" id="accueil">
+        <div>
+            <img src="img/slider.jpg" alt="" class="slider-background">
+        </div>
+        <div class="slider-content">
+            <h1 class="callOutTitle">Elimane Cheikh WADE</h1>
+            <p class="animate__zoomInDown">un Développeur FullStack</p>
+        </div>
+        <img src="img/me.jpg" alt="" class="profile animate_backInUp">
+    </div>
+
+    <div class="section"  id="apropos">
+        <div class="boxed">
+            <div class="flex">
+                <div class="proposW40">
+                    <h2>A propos</h2>
+                </div>
+                <div class="commentW60">
+                    <p>
+                        Passionné par la technologie, je me spécialise dans les réseaux informatiques et le développement, 
+                        avec un intérêt particulier pour la programmation. Une approche méthodique et rigoureuse se traduit par un 
+                        engagement fort dans la réalisation de projets professionnels. Organisé et pragmatique, cherche continuellement à perfectionner les 
+                        compétences pour contribuer de manière significative au monde dynamique de la technologie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section dark visible" id="competences">
+        <div class="boxed text-center">
+            <h2>Découvrez mes Compétences</h2>
+            <div class="flex gap20">
+                <div class="competencesW25 skills">
+                    <img src="img/html.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+                <div class="competencesW25 skills">
+                    <img src="img/css.png" alt="">
+                    <h3>CSS</h3>
+                </div>
+                <div class="competencesW25 skills">
+                    <img src="img/js.png" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="competencesW25 skills">
+                    <img src="img/react.png" alt="">
+                    <h3>REACT</h3>
+                </div>
+                <div class="competencesW25 skills">
+                    <img src="img/java.png" alt="">
+                    <h3>JAVA</h3>
+                </div>
+                <div class="competencesW25 skills">
+                    <img src="img/sql.png" alt="">
+                    <h3>SQL</h3>
+                </div>
+                <div class="competencesW25 skills">
+                    <img src="img/github.png" alt="">
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section visible" id="realisation">
+        <div class="boxed">
+            <h2>Mes Projets</h2>
+            <div class="flex wrap space-between gap20">
+                <div class="projectW32 project">
+                    <a href="#">
+                        <img src="img/E-com.jpg" alt="">
+                        <h3>Site E-commerce</h3>
+                    </a>
+                </div>
+                <div class="projectW32 project">
+                    <a href="#">
+                        <img src="img/templateEmail.jpg" alt="">
+                        <h3>Template Internal Emails</h3>
+                    </a>
+                </div>
+                <div class="projectW32 project">
+                    <a href="#">
+                        <img src="img/survey.jpg" alt="">
+                        <h3>Costumers Survey</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section dark visible" id="contact">
+        <div class="boxed text-center">
+            <h2>Contactez-moi !</h2>
+            <div class="flex space-between">
+                <div class="projectW32 contact">
+                    <span class="ri-mail-line icon"></span>
+                    <span class="name">Email :</span>
+                    <span class="value">elimane.wade@cnexia.com</span>
+                </div>
+                <div class="projectW32 contact">
+                    <span class="ri-linkedin-box-line icon"></span>
+                    <span class="name">Linkedin :</span>
+                    <span class="value">elimane-cheikh-wade-741104137/                    </span>
+                </div>
+                <div class="projectW32 contact">
+                    <span < class="ri-smartphone-line icon"></span>
+                    <span class="name">Phone :</span>
+                    <span class="value">06 256-131 00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <a href="https://github.com/wadeelimane/WEC_Portfolio.git" style="color: black; text-align: center;">Voir le projet sur Github</a>
+
+    </footer>
+    
+</body>
+<script src="js/app.js"></script>
+</html>

@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Vinyl&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    font-family: "Artifika", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    bottom: 0;
+    width:30%;
+    height: 40px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: #f2f2f2f2;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+// Menu au Header
+
+
+.header-logo {
+    width: 32%;
+    display: block;
+    margin: 0 100px;
+}
+
+.header-logo img {
+    width: 18%;
+    border-radius: 100%;
+    padding: 0 30px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .2s ease;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.header-menu li a:hover {
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+
+}
+
+.cv {
+    display: flex;
+    gap: .5rem;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 8px;
+    height: 36px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #ddd;
+    border: 1px solid #000;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .151), 0 8px 13px rgba(173, 139, 97, .063), 0 18px 23px rgba(0, 0, 0, .041);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cv:hover {
+    background-color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cv a  {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.slider {
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 20px;
+}
+
+.slider-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    margin-top: 90px;
+}
+
+.slider-content  {
+    position: absolute;
+    top: 50%;
+    left: 50%;transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.slider-content .animate__zoomInDown {
+    animation-name: zoomInDown;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.slider-content .callOutTitle {
+    animation-name: zoomInDown;
+    animation-delay: .3s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.profile {
+    position: absolute;
+    width: 20%;
+    top: 190px;
+    left:  30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.slider .animate_backInUp {
+    animation-name: backInUp;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.slider-content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.section {
+    position: relative;
+    padding: 100px 0;
+    margin: 100px 0;
+}
+
+.boxed {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+
+.flex  {
+    display: flex;
+}
+
+.proposW40 {
+    width: 40%;
+}
+
+.commentW60 {
+    width: 60%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.dark{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/slider.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    color: #fff;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.competencesW25 {
+    width: 25%;
+}
+
+.gap20 {
+    gap:1.5em;
+}
+
+.skills {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skills img {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.skills h3 {
+    color: #000;
+    margin-top: .5em;
+}
+
+.projectW32 {
+    width: 32%;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.project {
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 0 .5em;
+    position: relative;
+}
+
+.project h3 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50, -50%);
+    width: fit-content;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.project a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    filter: brightness(40%);
+    transition: .3s ease;
+}
+
+.project:hover img {
+    filter: brightness(60%);
+}
+
+.project:hover h3 {
+    opacity: 1;
+}
+
+.wrap {
+    flex: wrap;
+}
+
+.animate__zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+}
+
+
+.icon {
+    display: block;
+    font-size: 1.5rem !important;
+}
+
+
+.label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 1.5rem !important;
+}
+
+
+.value {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.contact {
+    border: 2px dashed #fff;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0 10px;
+    // box-sizing: border-box;
+}
+
+
+// Animation sur Le nom et titre
+@-webkit-keyframes zoomInDown {
+    0% {
+        -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+        animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+        opacity: 0;
+        -webkit-transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+        transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0)
+    }
+
+    60% {
+        -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+        animation-timing-function: cubic-bezier(.175,.885,.32,1);
+        opacity: 1;
+        -webkit-transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        transform: scale3d(.475,.475,.475) translate3d(0,60px,0)
+    }
+}
+
+@keyframes zoomInDown {
+    0% {
+        -webkit-animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+        animation-timing-function: cubic-bezier(.55,.055,.675,.19);
+        opacity: 0;
+        -webkit-transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+        transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0)
+    }
+
+    60% {
+        -webkit-animation-timing-function: cubic-bezier(.175,.885,.32,1);
+        animation-timing-function: cubic-bezier(.175,.885,.32,1);
+        opacity: 1;
+        -webkit-transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+        transform: scale3d(.475,.475,.475) translate3d(0,60px,0)
+    }
+}
+
+
+// Animation sur la photo de profil 
+
+@-webkit-keyframes backInUp {
+    0% {
+        opacity: .7;
+        -webkit-transform: translateY(1200px) scale(.7);
+        transform: translateY(1200px) scale(.7)
+    }
+
+    80% {
+        opacity: .7;
+        -webkit-transform: translateY(0) scale(.7);
+        transform: translateY(0) scale(.7)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes backInUp {
+    0% {
+        opacity: .7;
+        -webkit-transform: translateY(1200px) scale(.7);
+        transform: translateY(1200px) scale(.7)
+    }
+
+    80% {
+        opacity: .7;
+        -webkit-transform: translateY(0) scale(.7);
+        transform: translateY(0) scale(.7)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.animate__backInUp {
+    -webkit-animation-name: backInUp;
+    animation-name: backInUp
+}
+
+// Aspect Responsive
+
+@media (max-width:810px) {
+    header{
+        display : none;
+    }
+
+    .slider-content {
+        width: 90%;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+}
