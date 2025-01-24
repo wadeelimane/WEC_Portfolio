@@ -50,10 +50,6 @@ Portfolio/
    ```bash
    cd portfolio
    ```
-3. Installez les dépendances :
-   ```bash
-   npm install
-   ```
 
 ## Utilisation
 
