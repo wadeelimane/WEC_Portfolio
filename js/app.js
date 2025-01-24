@@ -1,9 +1,16 @@
-// document.addEventListener('scroll', function() {
-//     const sectionElement = document.querySelector('.section');
-//     const rect = sectionElement.getBoundingClientRect();
-//     const windowHeight = window.innerHeight;
+const backToTop = document.createElement('button');
+backToTop.id = 'back-to-top';
+backToTop.innerHTML = '<i class="ri-arrow-up-line"></i>';
+document.body.appendChild(backToTop);
 
-//     if (rect.top <= windowHeight - 100) {
-//         sectionElement.classList.add('visible');
-//     }
-// });
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

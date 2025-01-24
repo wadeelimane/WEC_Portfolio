@@ -420,6 +420,29 @@ p {
     animation-name: backInUp
 }
 
+// Bouton de monter en haut
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1e1e1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5%;
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background: #45a049;
+}
+
+
 // Aspect Responsive
 
 @media (max-width:810px) {
